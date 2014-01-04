@@ -1,32 +1,4 @@
-# ==================================== #
-# Magento Boilerplate .gitignore file. #
-#                                      #
-#  Copyright (c) 2012 Webcomm Pty Ltd  #
-#                                      #
-# This file is tested on:              #
-#  - Magento CE 1.6.2.0                #
-#  - Magento CE 1.7.0.0                #
-#  - Magento CE 1.7.0.1                #
-#  - Magento CE 1.7.0.2                #
-#                                      #
-# ==================================== #
-
-
-
-# =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* #
-# Part A: Ignore all files that        #
-#         probably shouldn't be in     #
-#         version control              #
-# =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* #
-#
-# You shouldn't need to edit these
-# files at all unless a Magento
-# upgrade breaks this. These files are
-# in alphabetical order.
-
-
-
-# Numerous always-ignore extensions
+# Just always ignore
 *.diff
 *.err
 *.orig
@@ -39,7 +11,7 @@
 *.sass-cache
 *.iml
 
-# OS or Editor folders
+# OS / Editor folders
 .DS_Store
 Thumbs.db
 .cache
@@ -48,16 +20,14 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
-
-# Dreamweaver added files
+*.sublime-project
+*.sublime-workspace
 _notes
 dwsync.xml
-
-# Komodo
 *.komodoproject
 .komodotools
 
-# Folders to ignore
+# Folders
 .hg
 .svn
 .CVS
@@ -71,21 +41,9 @@ publish
 /vendor
 
 
-
-# =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* #
-# Part B: Ignore all standard Magento  #
-#         files.                       #
-# =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* #
-#
-# You shouldn't need to edit these
-# files at all unless a Magento
-# upgrade breaks this. These files are
-# in alphabetical order. The ignores
-# are setup so that in Part C onwards
-# you usem minimal code to setup
-# your ignores.
-
-
+# ================================================= #
+# Ignore all Magento files                   		#
+# ================================================= #
 
 # .htaccess files
 /.htaccess.sample
@@ -291,38 +249,19 @@ publish
 /var
 
 
-# ==================================== #
-# Part C: Reference all extensions     #
-#         that are required by this    #
-#         theme that should be under   #
-#         version control.             #
-# ==================================== #
+# ================================================= #
+# Extensions                   						#
+# ================================================= #
+
 #
-# You need to include all files for
-# extension. Each extension's files
-# should be kept together so it is
-# easy to find them in future if need
-# be.
 
 
-
-
-# ==================================== #
-# Part D: Setup your theme overrides   #
-# ==================================== #
-#
-# This is where you include your theme
-# overrides in app/design/frontend and
-# skin/frontend
-
-
+# ================================================= #
+# Themes             								#
+# ================================================= #
 
 # Boilerplate Theme
-!/app/design/frontend/boilerplate
-!/skin/frontend/boilerplate
+!/app/design/frontend/scaffold
+!/skin/frontend/scaffold
+!/skin/frontend/scaffold-child
 
-# If you want to be very clever, you
-# will duplicate 'mytheme', as it
-# inherits all styling from 'boilerplate'
-# and makes upgrading easier!
-!/skin/frontend/mytheme

@@ -1,7 +1,7 @@
 {
-    "name": "webcomm/magento-boilerplate",
+    "name": "gizburdt/mage-scaffold",
     "type": "magento-module",
-    "description": "HTML5 Twitter Bootstrap 3.0 Magento Boilerplate Template",
+    "description": "Scaffold a Magento theme.",
     "authors": [
         {
             "name": "Ben Corlett",
