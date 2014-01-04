@@ -1,17 +1,7 @@
 {
     "name": "gizburdt/mage-scaffold",
     "type": "magento-module",
-    "description": "Scaffold a Magento theme.",
-    "authors": [
-        {
-            "name": "Ben Corlett",
-            "email": "bencorlett@me.com"
-        },
-        {
-            "name": "Webcomm Pty Ltd",
-            "email": "contact@webcomm.com.au"
-        }
-    ],
+    "description": "",
     "repositories": [
         {
             "type": "vcs",
@@ -20,5 +10,9 @@
     ],
     "require": {
         "magento-hackathon/magento-composer-installer":"*"
+    },
+    "extra":{
+        "magento-root-dir": "/",
+        "magento-deploystrategy": "copy"
     }
 }

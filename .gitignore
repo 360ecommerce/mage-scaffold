@@ -37,7 +37,7 @@ publish
 
 # Composer
 !/composer.json
-!/composer.lock
+/composer.lock
 /vendor
 
 
