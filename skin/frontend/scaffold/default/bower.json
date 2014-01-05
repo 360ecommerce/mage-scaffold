@@ -1,19 +1,13 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.0",
-  "authors": [
-    "Webcomm <contact@webcomm.com.au>"
-  ],
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "~3.0.0",
-    "font-awesome": "~4.0.3"
-  }
+    "name": "gizburdt/mage-conductor",
+    "version": "0.1",
+    "private": true,
+    "dependencies": {
+        "fancybox":         "latest",
+        "respond":          "latest",
+        "enquire":          "latest",
+        "carouFredSel":     "latest",
+        "modernizr":        "latest",
+        "bootstrap":        ">=3.0.3"
+    }
 }

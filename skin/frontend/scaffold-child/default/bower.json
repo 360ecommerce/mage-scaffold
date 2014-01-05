@@ -1,16 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.0",
-  "authors": [
-    "Webcomm <contact@webcomm.com.au>"
-  ],
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {}
+    "name": "gizburdt/mage-conductor",
+    "version": "0.0",
+    "private": true,
+    "dependencies": {}
 }
