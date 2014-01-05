@@ -430,7 +430,7 @@ ol {
   img {
     max-width: 100% !important;
   }
-  @page  {
+  @page {
     margin: 2cm .5cm;
   }
   p,
@@ -563,10 +563,8 @@ header[role="banner"]:before,
 header[role="banner"]:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 header[role="banner"]:after {
   clear: both;
@@ -575,10 +573,8 @@ header[role="banner"]:before,
 header[role="banner"]:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 header[role="banner"]:after {
   clear: both;
@@ -623,10 +619,8 @@ header[role="banner"] .quick-access {
   header[role="banner"] .form-search:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   header[role="banner"] .form-search:after {
     clear: both;
@@ -635,10 +629,8 @@ header[role="banner"] .quick-access {
   header[role="banner"] .form-search:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   header[role="banner"] .form-search:after {
     clear: both;
@@ -657,10 +649,8 @@ header[role="banner"] .quick-access {
 .layout:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .layout:after {
   clear: both;
@@ -669,10 +659,8 @@ header[role="banner"] .quick-access {
 .layout:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .layout:after {
   clear: both;
@@ -740,10 +728,8 @@ footer[role="contentinfo"]:before,
 footer[role="contentinfo"]:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 footer[role="contentinfo"]:after {
   clear: both;
@@ -752,10 +738,8 @@ footer[role="contentinfo"]:before,
 footer[role="contentinfo"]:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 footer[role="contentinfo"]:after {
   clear: both;
@@ -1009,10 +993,8 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -1021,10 +1003,8 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -1122,10 +1102,8 @@ h6,
 .page-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .page-title:after {
   clear: both;
@@ -1134,10 +1112,8 @@ h6,
 .page-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .page-title:after {
   clear: both;
@@ -1174,10 +1150,8 @@ h6,
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -1186,10 +1160,8 @@ h6,
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -1202,10 +1174,8 @@ h6,
 .row:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .row:after {
   clear: both;
@@ -1214,10 +1184,8 @@ h6,
 .row:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .row:after {
   clear: both;
@@ -1881,10 +1849,8 @@ h6,
 .col4-set:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .col2-set:after,
 .col2-set:after,
@@ -1899,10 +1865,8 @@ h6,
 .col4-set:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .col2-set:after,
 .col2-set:after,
@@ -2268,7 +2232,6 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-
   line-height: normal;
 }
 input[type="file"] {
@@ -2550,10 +2513,8 @@ textarea.input-lg {
 .form-horizontal .form-group:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-horizontal .form-group:after {
   clear: both;
@@ -2562,10 +2523,8 @@ textarea.input-lg {
 .form-horizontal .form-group:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-horizontal .form-group:after {
   clear: both;
@@ -2631,10 +2590,8 @@ textarea.input-text {
 .form-list:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list:after {
   clear: both;
@@ -2643,10 +2600,8 @@ textarea.input-text {
 .form-list:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list:after {
   clear: both;
@@ -2658,10 +2613,8 @@ textarea.input-text {
 .form-list li:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list li:after {
   clear: both;
@@ -2670,10 +2623,8 @@ textarea.input-text {
 .form-list li:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list li:after {
   clear: both;
@@ -2786,10 +2737,8 @@ textarea.form-list select {
 .form-list li.additional-row p:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list li.additional-row p:after {
   clear: both;
@@ -2798,10 +2747,8 @@ textarea.form-list select {
 .form-list li.additional-row p:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .form-list li.additional-row p:after {
   clear: both;
@@ -2935,10 +2882,8 @@ textarea.form-list select {
 .buttons-set:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .buttons-set:after {
   clear: both;
@@ -2947,10 +2892,8 @@ textarea.form-list select {
 .buttons-set:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .buttons-set:after {
   clear: both;
@@ -3584,10 +3527,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .nav:after {
   clear: both;
@@ -3596,10 +3537,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .nav:after {
   clear: both;
@@ -3821,10 +3760,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar:after {
   clear: both;
@@ -3833,10 +3770,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar:after {
   clear: both;
@@ -3850,10 +3785,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-header:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar-header:after {
   clear: both;
@@ -3862,10 +3795,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-header:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar-header:after {
   clear: both;
@@ -3888,10 +3819,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-collapse:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar-collapse:after {
   clear: both;
@@ -3900,10 +3829,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-collapse:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .navbar-collapse:after {
   clear: both;
@@ -4475,10 +4402,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .sorter:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .pager:after,
 .sorter:after {
@@ -4490,10 +4415,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .sorter:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .pager:after,
 .sorter:after {
@@ -4899,10 +4822,8 @@ a.list-group-item.active:focus .list-group-item-text {
 .panel-body:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .panel-body:after {
   clear: both;
@@ -4911,10 +4832,8 @@ a.list-group-item.active:focus .list-group-item-text {
 .panel-body:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .panel-body:after {
   clear: both;
@@ -5190,8 +5109,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  src: url('../vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6794,10 +6713,8 @@ textarea.form-language select {
 .advanced-search-summary:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .advanced-search-summary:after {
   clear: both;
@@ -6806,10 +6723,8 @@ textarea.form-language select {
 .advanced-search-summary:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .advanced-search-summary:after {
   clear: both;
@@ -6942,10 +6857,8 @@ textarea.form-language select {
 .block .actions:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .block .block-content:after,
 .block .actions:after {
@@ -6957,10 +6870,8 @@ textarea.form-language select {
 .block .actions:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .block .block-content:after,
 .block .actions:after {
@@ -6970,10 +6881,8 @@ textarea.form-language select {
 .block .block-content:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .block .block-content:after {
   clear: both;
@@ -6982,10 +6891,8 @@ textarea.form-language select {
 .block .block-content:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .block .block-content:after {
   clear: both;
@@ -7353,10 +7260,8 @@ textarea.form-language select {
 .products-grid:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .products-grid:after {
   clear: both;
@@ -7365,10 +7270,8 @@ textarea.form-language select {
 .products-grid:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .products-grid:after {
   clear: both;
@@ -7417,10 +7320,8 @@ textarea.form-language select {
 .products-list li.item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .products-list li.item:after {
   clear: both;
@@ -7429,10 +7330,8 @@ textarea.form-language select {
 .products-list li.item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .products-list li.item:after {
   clear: both;
@@ -7546,10 +7445,8 @@ textarea.form-language select {
 .add-to-box:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .add-to-box:after {
   clear: both;
@@ -7558,10 +7455,8 @@ textarea.form-language select {
 .add-to-box:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .add-to-box:after {
   clear: both;
@@ -7590,10 +7485,8 @@ textarea.form-language select {
 .product-view:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view:after {
   clear: both;
@@ -7602,10 +7495,8 @@ textarea.form-language select {
 .product-view:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view:after {
   clear: both;
@@ -7662,10 +7553,8 @@ textarea.form-language select {
 .product-essential .product-img-box .more-views ul:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-essential .product-img-box .more-views ul:after {
   clear: both;
@@ -7674,10 +7563,8 @@ textarea.form-language select {
 .product-essential .product-img-box .more-views ul:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-essential .product-img-box .more-views ul:after {
   clear: both;
@@ -7988,10 +7875,8 @@ textarea.product-options dd textarea {
 .product-options-bottom:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-options-bottom:after {
   clear: both;
@@ -8000,10 +7885,8 @@ textarea.product-options dd textarea {
 .product-options-bottom:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-options-bottom:after {
   clear: both;
@@ -8037,10 +7920,8 @@ textarea.product-options dd textarea {
 .product-options-bottom .price-box:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-options-bottom .price-box:after {
   clear: both;
@@ -8049,10 +7930,8 @@ textarea.product-options dd textarea {
 .product-options-bottom .price-box:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-options-bottom .price-box:after {
   clear: both;
@@ -8115,10 +7994,8 @@ textarea.product-options dd textarea {
 .product-view .box-collateral:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view .box-collateral:after {
   clear: both;
@@ -8127,10 +8004,8 @@ textarea.product-options dd textarea {
 .product-view .box-collateral:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view .box-collateral:after {
   clear: both;
@@ -8296,10 +8171,8 @@ textarea.product-options dd textarea {
 .product-view .box-reviews dd:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view .box-reviews dd:after {
   clear: both;
@@ -8308,10 +8181,8 @@ textarea.product-options dd textarea {
 .product-view .box-reviews dd:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .product-view .box-reviews dd:after {
   clear: both;
@@ -8566,10 +8437,8 @@ textarea.product-options dd textarea {
 .catalog-seo-sitemap-product .page-sitemap .sitemap:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .catalog-seo-sitemap-product .page-sitemap .sitemap:after {
   clear: both;
@@ -8578,10 +8447,8 @@ textarea.product-options dd textarea {
 .catalog-seo-sitemap-product .page-sitemap .sitemap:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .catalog-seo-sitemap-product .page-sitemap .sitemap:after {
   clear: both;
@@ -8606,10 +8473,8 @@ textarea.product-options dd textarea {
 .catalog-seo-sitemap-category .page-sitemap .sitemap:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .catalog-seo-sitemap-category .page-sitemap .sitemap:after {
   clear: both;
@@ -8618,10 +8483,8 @@ textarea.product-options dd textarea {
 .catalog-seo-sitemap-category .page-sitemap .sitemap:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .catalog-seo-sitemap-category .page-sitemap .sitemap:after {
   clear: both;
@@ -8797,10 +8660,8 @@ textarea.cart-table .qty {
 .cart .cart-collaterals:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .cart .cart-collaterals:after {
   clear: both;
@@ -8809,10 +8670,8 @@ textarea.cart-table .qty {
 .cart .cart-collaterals:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .cart .cart-collaterals:after {
   clear: both;
@@ -9440,10 +9299,8 @@ textarea.cart-table .qty {
 .tool-tip .btn-close:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .tool-tip .btn-close:after {
   clear: both;
@@ -9452,10 +9309,8 @@ textarea.cart-table .qty {
 .tool-tip .btn-close:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .tool-tip .btn-close:after {
   clear: both;
@@ -9536,10 +9391,8 @@ textarea.cart-table .qty {
 .gift-messages-form .item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .gift-messages-form .item:after {
   clear: both;
@@ -9548,10 +9401,8 @@ textarea.cart-table .qty {
 .gift-messages-form .item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .gift-messages-form .item:after {
   clear: both;
@@ -9600,10 +9451,8 @@ textarea.cart-table .qty {
 .gift-message-row dl:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .gift-message-row dl:after {
   clear: both;
@@ -9612,10 +9461,8 @@ textarea.cart-table .qty {
 .gift-message-row dl:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .gift-message-row dl:after {
   clear: both;
@@ -9779,10 +9626,8 @@ textarea.cart-table .qty {
 .opc .step-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .opc .step-title:after {
   clear: both;
@@ -9791,10 +9636,8 @@ textarea.cart-table .qty {
 .opc .step-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .opc .step-title:after {
   clear: both;
@@ -9858,10 +9701,8 @@ textarea.cart-table .qty {
 .checkout-progress:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .checkout-progress:after {
   clear: both;
@@ -9870,10 +9711,8 @@ textarea.cart-table .qty {
 .checkout-progress:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .checkout-progress:after {
   clear: both;
@@ -10032,10 +9871,8 @@ textarea.multiple-checkout .data-table select {
 .multiple-checkout .place-order:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .multiple-checkout .place-order:after {
   clear: both;
@@ -10044,10 +9881,8 @@ textarea.multiple-checkout .data-table select {
 .multiple-checkout .place-order:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .multiple-checkout .place-order:after {
   clear: both;
@@ -10240,10 +10075,8 @@ textarea.multiple-checkout .data-table select {
 .box-account .box-head:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .box-account .box-head:after {
   clear: both;
@@ -10252,10 +10085,8 @@ textarea.multiple-checkout .data-table select {
 .box-account .box-head:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .box-account .box-head:after {
   clear: both;
@@ -10292,10 +10123,8 @@ textarea.multiple-checkout .data-table select {
 .dashboard .box .box-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dashboard .box .box-title:after {
   clear: both;
@@ -10304,10 +10133,8 @@ textarea.multiple-checkout .data-table select {
 .dashboard .box .box-title:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dashboard .box .box-title:after {
   clear: both;
@@ -10348,10 +10175,8 @@ textarea.multiple-checkout .data-table select {
 .dashboard .box-reviews li.item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dashboard .box-reviews li.item:after {
   clear: both;
@@ -10360,10 +10185,8 @@ textarea.multiple-checkout .data-table select {
 .dashboard .box-reviews li.item:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .dashboard .box-reviews li.item:after {
   clear: both;
@@ -11123,10 +10946,8 @@ fieldset[disabled] .my-wishlist .btn-add.active {
 .modal-footer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .modal-footer:after {
   clear: both;
@@ -11135,10 +10956,8 @@ fieldset[disabled] .my-wishlist .btn-add.active {
 .modal-footer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .modal-footer:after {
   clear: both;
@@ -11484,10 +11303,8 @@ body.modal-open,
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -11589,10 +11406,8 @@ body.modal-open,
 .clearer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearer:after {
   clear: both;
@@ -11601,10 +11416,8 @@ body.modal-open,
 .clearer:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearer:after {
   clear: both;

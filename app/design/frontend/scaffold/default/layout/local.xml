@@ -43,7 +43,7 @@
 			</action>
 			<action method="addItem">
 				<type>skin_js</type>
-				<name>js/script-ck.js</name>
+				<name>js/functions.js</name>
 			</action>
 
 		</reference>
@@ -60,7 +60,7 @@
 			</action>
 			<action method="addItem">
 				<type>skin_js</type>
-				<name>js/script-ck.js</name>
+				<name>js/functions.js</name>
 			</action>
 
 		</reference>
