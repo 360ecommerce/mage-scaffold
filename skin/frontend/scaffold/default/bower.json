@@ -1,5 +1,5 @@
 {
-    "name": "gizburdt/mage-conductor",
+    "name": "gizburdt/mage-scaffold",
     "version": "0.1",
     "private": true,
     "dependencies": {
