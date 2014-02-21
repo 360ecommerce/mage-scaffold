@@ -1,2 +1,41 @@
-# Brower
+# Crap
+.DS_Store
+.log
+ 
+# Editors
+*.sublime-project
+*.sublime-workspace
+*.idea
+.idea
+.idea/*
+ 
+# Composer
+composer.lock
 vendor/
+ 
+# Magento
+/.htaccess
+/errors/local.xml
+/app/etc/local.xml
+/downloader/.cache
+/downloader/cache.cfg
+/downloader/connect.cfg
+/var/*
+!/var/.htaccess
+/media/catalog/product/cache
+/includes/src
+
+# Wordpress
+wordpress/
+
+# Ghost
+!ghost/
+ghost/*
+!ghost/content
+!ghost/config.js
+
+# Grunt
+node_modules
+
+# Codekit
+codekit-config.json
