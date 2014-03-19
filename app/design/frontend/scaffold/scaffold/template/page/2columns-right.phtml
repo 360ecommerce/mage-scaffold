@@ -38,18 +38,20 @@
     <?php echo $this->getChildHtml('after_body_start') ?>
     <?php echo $this->getChildHtml('header') ?>
 
-    <div class="container">
-        <?php echo $this->getChildHtml('global_notices') ?>
-        <?php echo $this->getChildHtml('breadcrumbs') ?>
+    <div class="container site-content">
+        <div class="content-wrap">
+            <?php echo $this->getChildHtml('global_notices') ?>
+            <?php echo $this->getChildHtml('breadcrumbs') ?>
 
-        <div class="layout layout-2-cols">
-            <div class="main">
-                <?php echo $this->getChildHtml('global_messages') ?>
-                <?php echo $this->getChildHtml('content') ?>
+            <div class="layout layout-2-cols">
+                <div class="main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+                <aside class="sidebar sidebar-right">
+                    <?php echo $this->getChildHtml('right') ?>
+                </aside>
             </div>
-            <aside class="sidebar sidebar-right">
-                <?php echo $this->getChildHtml('right') ?>
-            </aside>
         </div>
     </div>
 
