@@ -3,11 +3,12 @@
     "version": "0.1",
     "private": true,
     "dependencies": {
-        "fancybox":         "latest",
         "respond":          "latest",
         "enquire":          "latest",
-        "carouFredSel":     "latest",
         "modernizr":        "latest",
-        "bootstrap":        ">=3.0.3"
+        "bootstrap":        ">=3.1.1",
+        "html5shiv":        "latest",
+        "carouFredSel":     "latest",
+        "fancybox":         "latest"
     }
 }
