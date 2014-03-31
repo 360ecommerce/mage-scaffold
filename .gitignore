@@ -35,8 +35,10 @@ ghost/*
 !ghost/content
 !ghost/config.js
 
-# Grunt
+# Node
 node_modules
 
 # Codekit
 codekit-config.json
+config.codekit
+.codekit-cache
