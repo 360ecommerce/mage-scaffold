@@ -12,6 +12,7 @@
 
 			<!-- Scaffold -->
 			<action method="addCss"><stylesheet>css/style.css</stylesheet></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name></action>
