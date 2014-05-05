@@ -27,7 +27,7 @@ vendor/
 /includes/src
 
 # Wordpress
-wordpress/
+/wordpress/
 
 # Ghost
 !ghost/
