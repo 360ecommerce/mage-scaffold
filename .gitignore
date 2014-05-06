@@ -25,15 +25,16 @@ vendor/
 !/var/.htaccess
 /media/catalog/product/cache
 /includes/src
+cache/
 
 # Wordpress
 /wordpress/
 
 # Ghost
-!ghost/
-ghost/*
-!ghost/content
-!ghost/config.js
+!/ghost/
+/ghost/*
+!/ghost/content
+!/ghost/config.js
 
 # Node
 node_modules
