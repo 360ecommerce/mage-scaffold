@@ -23,7 +23,6 @@ vendor/
 /downloader/connect.cfg
 /var/*
 !/var/.htaccess
-/media/catalog/product/cache
 /includes/src
 cache/
 
