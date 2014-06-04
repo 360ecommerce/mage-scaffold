@@ -21,10 +21,11 @@ vendor/
 /downloader/.cache
 /downloader/cache.cfg
 /downloader/connect.cfg
+/media/catalog/product/cache
 /var/*
 !/var/.htaccess
+/var/cache/
 /includes/src
-cache/
 
 # Wordpress
 /wordpress/
