@@ -4,7 +4,7 @@
     padding: @grid-gutter-width;
 }
 
-header[role="banner"] {
+.site-header {
     .make-row();
     margin-top: @line-height-computed;
     margin-bottom: @line-height-computed;
@@ -55,13 +55,13 @@ header[role="banner"] {
 }
 
 // Main
-div[role="main"] {
+.main {
     .make-md-column(9);
     margin-bottom: @line-height-computed;
 }
 
 // Sidebar(s)
-aside[role="complementary"] {
+.sidebar {
     .make-md-column(3);
     display: none;
     margin-bottom: @line-height-computed;
@@ -72,7 +72,7 @@ aside[role="complementary"] {
 }
 
 // Footer
-footer[role="contentinfo"] {
+.site-footer {
     .clearfix();
     margin-bottom: @line-height-computed;
 
