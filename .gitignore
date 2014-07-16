@@ -43,3 +43,6 @@ node_modules
 codekit-config.json
 config.codekit
 .codekit-cache
+
+# Robots
+robots.txt
