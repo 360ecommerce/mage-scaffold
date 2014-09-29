@@ -10,7 +10,10 @@
                 <?php echo $this->htmlEscape($_crumbInfo['label']) ?>
             <?php endif; ?>
         </li>
-        <li class="sep">bla</li>
+
+        <?php if( ! $_crumbInfo['last'] ) : ?>
+            <li class="sep"></li>
+        <?php endif; ?>
     <?php endforeach; ?>
 </ul>
 <?php endif; ?>
