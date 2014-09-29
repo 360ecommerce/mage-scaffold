@@ -12,19 +12,37 @@
 # Composer
 composer.lock
 vendor/
- 
-# Magento
+
+# Node
+node_modules
+
+# Codekit
+codekit-config.json
+config.codekit
+.codekit-cache
+
+# Local
 /maintenance.flag
 /.htaccess
 /errors/local.xml
 /app/etc/local.xml
+
+# Downloader
 /downloader/.cache
 /downloader/cache.cfg
 /downloader/connect.cfg
-/media/catalog/product/cache
+
+# Media
+!/media/
+/media/*
+!/media/email
+
+# Var
+!/var/
 /var/*
 !/var/.htaccess
-/var/cache/
+
+# Includes
 /includes/src
 
 # Wordpress
@@ -35,11 +53,3 @@ vendor/
 /ghost/*
 !/ghost/content
 !/ghost/config.js
-
-# Node
-node_modules
-
-# Codekit
-codekit-config.json
-config.codekit
-.codekit-cache
