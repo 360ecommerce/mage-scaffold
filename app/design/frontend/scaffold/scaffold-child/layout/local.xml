@@ -2,6 +2,7 @@
 <layout version="0.1.0">
 	<default>
 		<reference name="head">
+			<!-- Remove -->
 			<action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
 			<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name></action>
 			<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
@@ -10,9 +11,11 @@
 			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name></action>
 			<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
 
+			<!-- CSS -->
 			<action method="addCss"><stylesheet>vendor/fancybox/source/jquery.fancybox.css</stylesheet></action>
 			<action method="addCss"><stylesheet>css/style.css</stylesheet></action>
 
+			<!-- JS -->
 			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
