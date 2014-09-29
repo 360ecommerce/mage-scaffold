@@ -19,6 +19,7 @@
 			<action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/fancybox/source/jquery.fancybox.pack.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/bxslider-4/jquery.bxslider.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>js/functions.js</name></action>
 		</reference>
 	</default>
