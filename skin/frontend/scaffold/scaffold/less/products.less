@@ -1,9 +1,17 @@
 // Products grid
 .products-grid {
-    .make-row();
+    .clearfix();
+    border-top: 1px dashed @gray-lighter; 
+    border-left: 1px dashed @gray-lighter;
 
     .item {
-        .make-xs-column(4);
+        .clearfix();
+        .make-md-column(4);
+        .make-lg-column(3);
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        border-right: 1px dashed @gray-lighter; 
+        border-bottom: 1px dashed @gray-lighter;
     }
 
     .product-image {
@@ -14,9 +22,12 @@
     }
 
     .product-name {
+        &, a{ color: @text-color; font-weight: bold; }
     }
 
     .price-box {
+        > p{ display: inline-block; }
+        .price-label{ display: none; }
     }
 
     .actions {
@@ -107,7 +118,6 @@
 
 // Add to cart
 .add-to-cart {
-
     .paypal-logo {
         margin: 0;
         text-align: right;
@@ -158,21 +168,18 @@
 }
 .product-essential,
 .product-collateral {
-    .make-sm-column(12);
 }
 
 // Essential (media + shop)
 .product-essential {
-
     .product-shop {
-        min-height: 1px;
-        position: relative;
+        .make-md-column(6);
+        .make-lg-column(5);
     }
 
     .product-img-box {
-        .make-sm-column(7);
-        padding-left: 0;
-        padding-right: 0;
+        .make-md-column(6);
+        .make-lg-column(7);
 
         .more-views ul {
             .make-row();
@@ -186,7 +193,6 @@
     @media (min-width: @screen-sm) {
 
         .product-img-box {
-            padding-left: 0;
             padding-right: (@grid-gutter-width / 2);
         }
 
@@ -200,12 +206,6 @@
 
 // Product shop (name, price etc)
 .product-view .product-shop {
-    padding: 15px;
-
-    .product-name {
-        margin: -15px -15px 15px;
-    }
-
     .availability,
     .price-box,
     .add-to-box,
@@ -254,8 +254,6 @@
 
 // Product Options
 .product-options {
-    .well();
-    .well-sm();
     margin-bottom: (@line-height-computed / 2);
     position: relative;
 
@@ -290,8 +288,7 @@
         vertical-align: middle;
     }
     dd {
-        padding: 5px 0 10px 5px;
-        border-bottom: 1px solid @hr-border;
+        padding-top: 5px;
 
         .input-text,
         select,
@@ -303,6 +300,8 @@
         textarea {
             height: auto;
         }
+
+        > div + div{ margin-top: 5px; }
     }
     dl.last dd.last {
         border-bottom: 0;
@@ -333,11 +332,6 @@
     p.note {
         margin: 0;
         font-size: @font-size-small;
-    }
-    p.required {
-        position: absolute;
-        right: 20px;
-        top: 20px;
     }
 }
 
@@ -433,38 +427,9 @@
 
 // Attributes
 .product-view .box-additional {
-    padding: 0;
-
-    > h2 {
-        margin: 0;
-    }
-
     .data-table {
         border: 0;
         margin-bottom: 0;
-
-        > tbody > tr {
-            > th {
-                border-left: 0;
-            }
-            > td {
-                border-right: 0;
-            }
-
-            &.first {
-                > th,
-                > td {
-                    border-top: 0;
-                }
-            }
-
-            &.last {
-                > th,
-                > td {
-                    border-bottom: 0;
-                }
-            }
-        }
     }
 }
 

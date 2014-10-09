@@ -1,0 +1,11 @@
+<?php if( Mage::getSingleton('customer/session')->isLoggedIn() ) : ?>
+    <a href="<?php echo Mage::getUrl('customer/account'); ?>" class="btn">
+        <i class="glyphicon glyphicon-user"></i>
+        <span class="sr-only"><?php echo $this->__('Account') ?></span>
+    </a>
+<?php else : ?>
+    <a href="<?php echo Mage::helper('customer')->getLoginUrl(); ?>" class="btn">
+        <i class="glyphicon glyphicon-user"></i>
+        <span class="sr-only"><?php echo $this->__('Login') ?></span>
+    </a>
+<?php endif; ?>

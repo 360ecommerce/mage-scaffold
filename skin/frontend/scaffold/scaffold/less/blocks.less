@@ -1,6 +1,12 @@
 .block {
+    &{
+        margin-bottom: 15px;
+    }
 
-    .block-title {}
+    .block-title {
+        background: @gray-lighter;
+        padding: 10px 15px;
+    }
 
     .block-subtitle {
         margin: 0 15px (@line-height-computed / 2);
@@ -15,6 +21,8 @@
 
     .block-content {
         .clearfix();
+        border: 1px dashed @gray-lighter;
+        border-top: none;
 
         li.item {
             padding: 10px 15px;

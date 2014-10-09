@@ -9,9 +9,13 @@
 <?php echo $this->getChildHtml('head') ?>
 </head>
 <body class="page-popup <?php echo $this->getBodyClass() ? $this->getBodyClass() : ''; ?>">
-    <?php echo $this->getChildHtml('after_body_start') ?>
-    <?php echo $this->getChildHtml('content') ?>
-    <?php echo $this->getChildHtml('before_body_end') ?>
-    <?php echo $this->getAbsoluteFooter() ?>
+	<div class="site">
+
+    	<?php echo $this->getChildHtml('after_body_start') ?>
+    	<?php echo $this->getChildHtml('content') ?>
+    	<?php echo $this->getChildHtml('before_body_end') ?>
+    	<?php echo $this->getAbsoluteFooter() ?>
+    	
+    </div>
 </body>
 </html>

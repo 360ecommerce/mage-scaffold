@@ -3,16 +3,10 @@
 <?php if($_product->isSaleable()): ?>
     <div class="add-to-cart">
         <?php if(!$_product->isGrouped()): ?>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    <label for="qty"><?php echo $this->__('Qty:') ?></label>
-                </span>
-                <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo ($qty = $this->getProductDefaultQty() * 1) ? $qty : 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text form-control qty" />
-                <span class="input-group-btn">
-                    <button type="button" title="<?php echo $buttonTitle ?>" class="button btn btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
-                <?php echo $this->getChildHtml('', true, true) ?>
-                </span>
-            </div>
+            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+            <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo ($qty = $this->getProductDefaultQty() * 1) ? $qty : 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text form-control qty" />
+            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+            <?php echo $this->getChildHtml('', true, true) ?>
         <?php else: ?>
             <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
                 <?php echo $this->getChildHtml('', true, true) ?>

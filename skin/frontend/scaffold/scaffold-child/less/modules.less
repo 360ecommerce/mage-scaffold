@@ -1,0 +1,22 @@
+//
+// Buttons
+// --------------------------
+.btn{ font-weight: bold; }
+.btn-primary{ .button-variant( #fff, @color-primary, @color-primary ); }
+.btn-secondary{ .button-variant( #fff, @color-secondary, @color-secondary ); }
+.btn-tertiary{ .button-variant( @color-secondary, @color-tertiary, @color-tertiary ); }
+
+
+// Products grid
+// --------------------------
+.products-grid{
+	.product-image{ float: left; width: 40%; }
+	.product-meta{ float: right; width: 60%; padding-left: 15px; }
+	.product-name{ margin-bottom: 5px; }
+	.price-box{ margin-bottom: 5px; }
+
+	@media (min-width: @screen-md){
+		.product-image{ float: none; width: auto; }
+		.product-meta{ float: none; width: auto; padding-left: 0; }
+	}
+}

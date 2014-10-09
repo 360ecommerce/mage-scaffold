@@ -9,34 +9,36 @@
 <?php echo $this->getChildHtml('head') ?>
 </head>
 <body class="<?php echo $this->getBodyClass() ? $this->getBodyClass() : ''; ?>">
+    <div class="site">
 
-    <?php echo $this->getChildHtml('after_body_start') ?>
-    <?php echo $this->getChildHtml('header') ?>
+        <?php echo $this->getChildHtml('after_body_start') ?>
+        <?php echo $this->getChildHtml('header') ?>
 
-    <div class="container site-content">
-        <div class="content-wrap">
-            <?php echo $this->getChildHtml('global_notices') ?>
-            <?php echo $this->getChildHtml('breadcrumbs') ?>
+        <div class="site-content">
+            <div class="content-wrap">
+                <?php echo $this->getChildHtml('global_notices') ?>
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
 
-            <div class="layout layout-2-cols">
-                <?php echo $this->getChildHtml('after_layout_start') ?>
-                
-                <div class="main">
-                    <?php echo $this->getChildHtml('global_messages') ?>
-                    <?php echo $this->getChildHtml('content') ?>
+                <div class="layout layout-2-cols">
+                    <?php echo $this->getChildHtml('after_layout_start') ?>
+                    
+                    <div class="main">
+                        <?php echo $this->getChildHtml('global_messages') ?>
+                        <?php echo $this->getChildHtml('content') ?>
+                    </div>
+                    <aside class="sidebar sidebar-right">
+                        <?php echo $this->getChildHtml('right') ?>
+                    </aside>
+
+                    <?php echo $this->getChildHtml('before_layout_end') ?>
                 </div>
-                <aside class="sidebar sidebar-right">
-                    <?php echo $this->getChildHtml('right') ?>
-                </aside>
-
-                <?php echo $this->getChildHtml('before_layout_end') ?>
             </div>
         </div>
+
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+        <?php echo $this->getAbsoluteFooter() ?>
+    
     </div>
-
-    <?php echo $this->getChildHtml('footer') ?>
-    <?php echo $this->getChildHtml('before_body_end') ?>
-    <?php echo $this->getAbsoluteFooter() ?>
-
 </body>
 </html>

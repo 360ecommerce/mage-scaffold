@@ -11,21 +11,91 @@
 			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name></action>
 			<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
 
+			<!-- Fonts -->
+			<action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700</href></action>
+
 			<!-- CSS -->
 			<action method="addCss"><stylesheet>vendor/fancybox/source/jquery.fancybox.css</stylesheet></action>
 			<action method="addCss"><stylesheet>css/style.css</stylesheet></action>
 
 			<!-- JS -->
+			<action method="addItem"><type>skin_js</type><name>vendor/jquery/dist/jquery.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/jquery.noconflict.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/jquery-ui/jquery-ui.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/fancybox/source/jquery.fancybox.pack.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bxslider-4/jquery.bxslider.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>js/functions.js</name></action>
 		</reference>
+
+		<reference name="header">
+	        <remove name="top.links" />
+	        <remove name="store_language" />
+	        <remove name="welcome" />
+
+	        <block name="header.extra" as="header.extra" type="core/text_list">
+	        	<block type="page/html_wrapper" name="header.mobile" as="header.mobile">
+	        		<action method="setElementClass"><value>header-mobile</value></action>
+	        		<block type="core/template" name="mobile.navbar" template="page/html/header/mobile/navbar-toggle.phtml"></block>
+	        		<block type="core/template" name="mobile.search" template="page/html/header/mobile/search.phtml"></block>
+	        		<block type="core/template" name="mobile.phone" template="page/html/header/mobile/telephone.phtml"></block>
+	        		<block type="core/template" name="mobile.account" template="page/html/header/mobile/account.phtml"></block>
+	        		<block type="core/template" name="mobile.cart" template="page/html/header/mobile/cart.phtml"></block>
+	        	</block>
+	        </block>
+	    </reference>
+
+	    <reference name="left">
+            <remove name="left.permanent.callout" />
+            <remove name="left.newsletter" />
+            <remove name="catalog.compare.sidebar" />
+        </reference>
+
+        <reference name="right">
+            <remove name="quote_sidebar" />
+            <remove name="right.permanent.callout" />
+            <remove name="right.reports.product.viewed" />
+            <remove name="right.poll" />
+            <remove name="cart_sidebar" />
+            <remove name="paypal.partner.right.logo" />
+        </reference>
 	</default>
+
+	<catalog_category_default>
+        <update handle="page_to_two_columns_left" />
+
+        <reference name="content">
+            <remove name="product_list_toolbar" />
+        </reference>
+    </catalog_category_default>
+
+    <catalog_category_layered>
+        <update handle="page_to_two_columns_left" />
+
+        <reference name="content">
+            <remove name="product_list_toolbar" />
+        </reference>
+    </catalog_category_layered>
+
+    <catalog_product_view>
+        <update handle="page_to_one_column" />
+    </catalog_product_view>
+
+    <checkout_cart_index>
+    	<update handle="checkout_header" />
+    </checkout_cart_index>
+
+    <checkout_onepage_index>
+    	<update handle="checkout_header" />
+    </checkout_onepage_index>
+
+    <checkout_index_index>
+    	<update handle="checkout_header" />
+    </checkout_index_index>
 
 	<print>
 		<reference name="head">
@@ -33,4 +103,30 @@
 			<action method="addItem"><type>skin_js</type><name>js/functions.js</name></action>
 		</reference>
 	</print>
+
+	<!-- Custom handles (for update) -->
+	<checkout_header>
+		<reference name="header">
+    		<action method="setData"><name>header_class</name><value>header-checkout</value></action>
+
+    		<remove name="catalog.topnav" />
+    		<remove name="top.search" />
+    		<remove name="mobile.navbar" />
+    		<remove name="mobile.search" />
+    		<remove name="mobile.cart" />
+    	</reference>
+	</checkout_header>
+
+	<!-- Page template handles (for update) -->
+	<page_to_one_column>
+		<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+	</page_to_one_column>
+
+	<page_to_two_columns_left>
+		<reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+	</page_to_two_columns_left>
 </layout>

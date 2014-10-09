@@ -4,12 +4,14 @@
     $catalogSearchHelper = $this->helper('catalogsearch');
 ?>
 
-<form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
+<a href="#search" class="btn btn-quaternary btn-search js-fancybox-special" data-wrap-css="fancybox-bare">
+    <i class="glyphicon glyphicon-search"></i>
+    <?php echo $this->__('Search'); ?>
+</a>
+
+<form id="search-form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get" style="display: none;">
     <div class="form-search">
         <div class="input-group">
-            <span class="input-group-addon">
-                <label for="search"><?php echo $this->__('Search:') ?></label>
-            </span>
             <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>">
             <span class="input-group-btn">
                 <button type="submit" title="<?php echo $this->__('Search') ?>" class="btn btn-default"><span><span><?php echo $this->__('Search') ?></span></span></button>

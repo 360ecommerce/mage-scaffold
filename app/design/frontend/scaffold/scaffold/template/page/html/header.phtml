@@ -3,19 +3,21 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div class="container">
-    <header class="site-header">
-        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"></a>
 
-        <div class="quick-access">
-            <div class="clearfix">
+<header class="site-header <?php echo $this->getHeaderClass(); ?>">
+    <div class="header-content">
+        <div class="header-inner">
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"></a>
+
+            <div class="quick-access">
                 <?php echo $this->getChildHtml('topLinks') ?>
                 <?php echo $this->getChildHtml('store_language') ?>
+                <?php echo $this->getChildHtml('topSearch') ?>
             </div>
-            <?php echo $this->getChildHtml('topSearch') ?>
+
+            <?php echo $this->getChildHtml('header.extra'); ?>
         </div>
-        
-        <?php echo $this->getChildHtml('topContainer'); ?>
-    </header>
-</div>
-<?php echo $this->getChildHtml('topMenu') ?>
+    </div>
+
+    <?php echo $this->getChildHtml('topMenu') ?>
+</header>

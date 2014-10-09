@@ -1,0 +1,55 @@
+<header class="site-header">
+    <div class="header-content">
+        <div class="header-inner">
+            <div class="col-left">
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"></a>
+            </div>
+
+            <div class="col-right">
+                <div class="quick-access">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                    <?php echo $this->getChildHtml('store_language') ?>
+                    <?php echo $this->getChildHtml('topSearch') ?>
+                </div>
+            </div>
+
+            <div class="header-mobile">
+                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#site-navigation">
+                    <span class="sr-only"><?php echo $this->__('Toggle Navigation') ?></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#search-form" class="btn js-fancybox-special">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <span class="sr-only"><?php echo $this->__('Search') ?></span>
+                </a>
+
+                <a href="tel:0858500198" class="btn">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                    <span class="sr-only"><?php echo $this->__('Telephone') ?></span>
+                </a>
+
+                <?php if( Mage::getSingleton('customer/session')->isLoggedIn() ) : ?>
+                    <a href="<?php echo Mage::getUrl('customer/account'); ?>" class="btn">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span class="sr-only"><?php echo $this->__('Account') ?></span>
+                    </a>
+                <?php else : ?>
+                    <a href="<?php echo Mage::helper('customer')->getLoginUrl(); ?>" class="btn">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span class="sr-only"><?php echo $this->__('Login') ?></span>
+                    </a>
+                <?php endif; ?>
+
+                <a href="<?php echo Mage::helper('checkout/cart')->getCartUrl(); ?>" class="btn btn-cart">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                    <span class="sr-only"><?php echo $this->__('Login') ?></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <?php echo $this->getChildHtml('header.menu') ?>
+</header>

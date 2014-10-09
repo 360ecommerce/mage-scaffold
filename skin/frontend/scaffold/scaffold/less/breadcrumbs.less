@@ -1,6 +1,8 @@
 @import "../vendor/bootstrap/less/breadcrumbs.less";
 
-.breadcrumb strong {
-    font-weight: normal;
-    color: @breadcrumb-active-color;
+.breadcrumbs{
+	&{ .clearfix(); margin-bottom: @line-height-computed; }
+	li{ display: inline-block; }
+	li + li{ margin-left: 10px; }
+	.sep:last-child{ display: none; }
 }

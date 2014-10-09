@@ -15,11 +15,63 @@
 // Structure
 // --------------------------------------------------
 	
+.site{}
+.site-content{ .container(); }
+.content-wrap{ padding-top: 15px; padding-bottom: 15px; }
+.layout{}
+
+.site-header{}
+.header-content{ .container(); }
+.header-inner{ .clearfix(); }
+
+.site-navigation{ background: #f8f8f8; border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; }
+.navigation-content{ .container(); }
+.navigation-inner{ @media(min-width: @screen-md){ .make-row(); } }
+
+.site-footer{ .container(); }
+.footer-content{}
+
+
+// Layout
+// --------------------------------------------------
+
+.layout{}
 
 
 // Header
 // --------------------------------------------------
 
+.site-header{
+    .header-inner{ padding-top: 15px; padding-bottom: 15px; }
+    .logo{ display: block; .size(203px,33px); margin: 0 auto 15px auto; .img-retina('../images/logo.png', '../images/logo@2x.png', 203px, 33px); }
+    .quick-access{ display: none; }
+    .header-mobile{
+        &{ text-align: center; }
+        .btn{ .button-size(8px, 14px, 18px, @line-height-base, @border-radius-base); .btn-tertiary(); float: none; display: inline-block; margin: 0; }
+        .btn + .btn{ margin-left: 5px; }
+        .btn-cart{ .btn-primary(); padding-left: 25px; padding-right: 25px; }
+        .navbar-toggle{
+            &{ padding-top: 12px; padding-bottom: 12px; }
+            .icon-bar{ background: @blue-light; height: 3px; }
+        }
+    }
+
+    @media (min-width: @screen-md) {
+        .logo{ float: left; margin: 0; }
+        .quick-access{ display: block; float: right; }
+        .header-mobile{ display: none; }
+    }
+}
+
+.site-navigation{
+    &{ border-top: 10px solid @color-secondary; border-bottom: none; }
+    .navbar{ min-height: 0; margin-bottom: 0; border: none; .border-radius(0); }
+    .navbar-nav{ margin-top: 0; margin-bottom: 0; }
+
+    @media (min-width: @screen-md) {
+        &{ border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7; }
+    }
+}
 
 
 // Footer
@@ -29,3 +81,13 @@
 
 // Content
 // --------------------------------------------------
+
+.site{
+    img{ .img-responsive(); }
+    p:empty{}
+}
+
+.page-title{
+    &{ border-bottom-style: dashed; }
+    h1{  }
+}
