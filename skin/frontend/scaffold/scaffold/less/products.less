@@ -17,8 +17,6 @@
     .product-image {
         display: block;
         margin-bottom: (@line-height-computed / 2);
-        
-        img{}
     }
 
     .product-name {
@@ -28,9 +26,6 @@
     .price-box {
         > p{ display: inline-block; }
         .price-label{ display: none; }
-    }
-
-    .actions {
     }
 
     .add-to-links {
@@ -166,40 +161,20 @@
 .product-view {
     .make-row();
 }
-.product-essential,
-.product-collateral {
-}
 
 // Essential (media + shop)
 .product-essential {
     .product-shop {
-        .make-md-column(6);
-        .make-lg-column(5);
+        .make-md-column(7);
+        .make-md-column-push(5);
     }
 
     .product-img-box {
-        .make-md-column(6);
-        .make-lg-column(7);
+        .make-md-column(5);
+        .make-md-column-pull(7);
 
         .more-views ul {
             .make-row();
-
-            li {
-                .make-xs-column(3);
-            }
-        }
-    }
-
-    @media (min-width: @screen-sm) {
-
-        .product-img-box {
-            padding-right: (@grid-gutter-width / 2);
-        }
-
-        // Switch floats around for the ordering
-        .product-shop {
-            float: right;
-            width: percentage((5 / @grid-columns));
         }
     }
 }

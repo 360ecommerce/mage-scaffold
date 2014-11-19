@@ -1,0 +1,36 @@
+// Cart
+.checkout-cart-index{
+	@media (max-width: @screen-md) {
+		.cart-table{ 
+			&,
+			tbody,
+			tfoot,
+			thead,
+			th,
+			td,
+			tr{ display: block; .clearfix(); border: none; background: transparent !important; }
+
+			thead,
+			tfoot{ display: none; }
+			tbody{ border: 1px dashed @blue-lighter; }
+			tr{ padding: 15px; position: relative; }
+			tr + tr{ border-top: 1px dashed @blue-lighter; }
+			td{ padding: 0; }
+
+			.td-product-name{ width: 40%; float: left; }
+			.td-product-meta,
+			.td-edit,
+			.td-price,
+			.td-wishlist,
+			.td-qty,
+			.td-subtotal{ width: 60%; float: right; }
+			.td-remove{ position: absolute; top: 15px; right: 15px; }
+
+			.product-name{ padding-right: 20px; }
+
+			.btn-empty,
+			.btn-update,
+			.btn-continue{ .btn-block(); margin-bottom: 10px; }
+		}
+	}
+}

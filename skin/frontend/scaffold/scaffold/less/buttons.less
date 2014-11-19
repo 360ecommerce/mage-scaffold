@@ -1,7 +1,10 @@
 @import "../vendor/bootstrap/less/buttons";
 
-// Alias Magento's button class to Bootstraps
-.button {
-    .btn();
-    .btn-default();
-}
+// Magento
+.button { .btn(); .btn-default(); }
+
+// Scaffold
+.btn-primary{ .button-variant( #fff, @color-primary, @color-primary ); }
+.btn-secondary{ .button-variant( #fff, @color-secondary, @color-secondary ); }
+.btn-tertiary{ .button-variant( @color-secondary, @color-tertiary, @color-tertiary ); }
+.btn-quaternary{ .button-variant( @color-primary, @color-quaternary, @color-quaternary ); }

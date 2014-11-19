@@ -44,7 +44,12 @@
 .site-header{
     .header-inner{ padding-top: 15px; padding-bottom: 15px; }
     .logo{ display: block; .size(203px,33px); margin: 0 auto 15px auto; .img-retina('../images/logo.png', '../images/logo@2x.png', 203px, 33px); }
-    .quick-access{ display: none; }
+    
+    .quick-access{ 
+        &{ display: none; padding: 0; text-align: right; }
+        .btn, .btn-merge{ display: inline-block; }
+    }
+    
     .header-mobile{
         &{ text-align: center; }
         .btn{ .button-size(8px, 14px, 18px, @line-height-base, @border-radius-base); .btn-tertiary(); float: none; display: inline-block; margin: 0; }
@@ -56,10 +61,27 @@
         }
     }
 
+    // Checkout
+    &.header-checkout{ border-bottom: 10px solid @color-secondary; }
+    
+    // Desktop
     @media (min-width: @screen-md) {
         .logo{ float: left; margin: 0; }
         .quick-access{ display: block; float: right; }
         .header-mobile{ display: none; }
+    }
+}
+
+.top-bar{
+    &{ display: none; padding-top: 15px; padding-bottom: 15px; font-size: 16px; }
+    .top-inner{ .container(); }
+    .col-left{ .make-md-column(7); }
+    .col-right{ .make-md-column(5) }
+    .col-right{ text-align: right; }
+    p{ margin: 0; }
+
+    @media (min-width: @screen-md) {
+        &{ display: block; }
     }
 }
 

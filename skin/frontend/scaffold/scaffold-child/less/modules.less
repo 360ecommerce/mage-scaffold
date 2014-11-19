@@ -1,16 +1,8 @@
-//
-// Buttons
-// --------------------------
-.btn{ font-weight: bold; }
-.btn-primary{ .button-variant( #fff, @color-primary, @color-primary ); }
-.btn-secondary{ .button-variant( #fff, @color-secondary, @color-secondary ); }
-.btn-tertiary{ .button-variant( @color-secondary, @color-tertiary, @color-tertiary ); }
-
 
 // Products grid
 // --------------------------
 .products-grid{
-	.product-image{ float: left; width: 40%; }
+	.product-image{ float: left; width: 40%; img{ margin: 0 auto; } }
 	.product-meta{ float: right; width: 60%; padding-left: 15px; }
 	.product-name{ margin-bottom: 5px; }
 	.price-box{ margin-bottom: 5px; }
@@ -19,4 +11,16 @@
 		.product-image{ float: none; width: auto; }
 		.product-meta{ float: none; width: auto; padding-left: 0; }
 	}
+}
+
+
+// Fancybox
+// --------------------------
+.fancybox-overlay{ background-color: rgba(0,0,0,0.6); }
+.fancybox-bare{
+	&{ background: none; }
+	.fancybox-skin{ background: none; .box-shadow(none); position: relative; }
+	.fancybox-close{ bottom: -45px; left: 50%; margin-left: -18px; top: auto; right: auto; }
+	.form-control{ margin-bottom: 15px; width: 300px; }
+	.btn{ display: block; width: 100%; }
 }

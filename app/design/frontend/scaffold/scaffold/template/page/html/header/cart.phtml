@@ -1,0 +1,10 @@
+<?php 
+	$_cartTotal = Mage::getSingleton('checkout/cart')->getQuote()->getSubtotal(); 
+	$_cartTotal = Mage::helper('core')->currency($_cartTotal, true, false);
+	$_noPrice 	= Mage::helper('core')->currency('0.00', true, false);
+?>
+
+<div class="btn-merge">
+	<span class="btn btn-link"><?php echo $_cartTotal ? $_cartTotal : $_noPrice; ?></span>
+	<a href="<?php echo $this->getUrl('checkout/cart')?>" class="btn"><i class="glyphicon glyphicon-shopping-cart"></i> <?php echo $this->__('Cart'); ?></a>
+</div>

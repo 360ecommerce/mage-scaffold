@@ -1,45 +1,23 @@
 @import "../vendor/bootstrap/less/alerts.less";
 
-.success {
-    color: @state-success-text;
-}
-.error {
-    color: @state-danger-text;
-}
-.notice {
-    color: @state-info-text;
-}
+// Global
+.success{ color: @state-success-text; }
+.error{ color: @state-danger-text; }
+.notice{ color: @state-info-text; }
 
-.messages > li {
-    margin-bottom: 10px;
-}
-
+// Messages
+.messages > li { margin-bottom: 10px; }
 .error-msg,
 .success-msg,
 .note-msg,
-.notice-msg {
-    .alert();
-}
-
-.error-msg {
-    .alert-danger();
-}
-
-.success-msg {
-    .alert-success();
-}
-
+.notice-msg{ .alert(); }
+.error-msg { .alert-danger(); }
+.success-msg { .alert-success(); }
 .note-msg,
-.notice-msg {
-    .alert-info();
-}
+.notice-msg { .alert-info(); }
 
 // Global notices
-.global-site-notice {
-    .alert();
-    .alert-warning();
-
-    p {
-        margin: 0;
-    }
+.global-site-notice { 
+    &{ .alert(); .alert-warning(); }
+    p{ margin: 0; }
 }

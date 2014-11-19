@@ -45,9 +45,6 @@ config.codekit
 # Includes
 /includes/src
 
-# Robots
-robots.txt
-
 # Wordpress
 /wordpress/
 
