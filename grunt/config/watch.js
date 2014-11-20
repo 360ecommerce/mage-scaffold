@@ -2,7 +2,7 @@ module.exports = {
 	
 	// Dev
     dev: {
-        files: ['skin/frontend/{package}}/{theme}}/**/*.less'],
+        files: ['skin/frontend/{PACKAGE}/{THEME}/**/*.less'],
         tasks: ['less:dev']
     }
 
