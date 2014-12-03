@@ -47,13 +47,6 @@
 	box-shadow: @shadow;
 }
 
-// Smooth hover fade
-.hover-fade(@duration: @smooth-hover-duration) {
-	transition-property: background;
-	transition-duration: @duration;
-	transition-timing-function: linear;
-}
-
 // Horizontal gradient
 .horizontal-gradient(@start-color, @end-color, @start-alpha: 1, @end-alpha: 1) {
 	@start-rgba: 	rgba( red(@start-color), green(@start-color), blue(@start-color), @start-alpha);
