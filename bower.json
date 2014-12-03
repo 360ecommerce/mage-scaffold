@@ -6,7 +6,7 @@
         "respond":          "latest",
         "enquire":          "latest",
         "modernizr":        "latest",
-        "bootstrap":        ">=3.1.1",
+        "bootstrap":        ">=3.3.0",
         "html5shiv":        "latest",
         "carouFredSel":     "latest",
         "fancybox":         "latest",
