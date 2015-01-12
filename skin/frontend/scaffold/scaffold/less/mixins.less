@@ -2,7 +2,7 @@
 
 // 
 // Glyphicons
-.make-glyphicon(@content) {
+.make-glyphicon(@content,@icon-font-family:'Glyphicons Halflings') {
 	position: relative;
 	display: inline-block;
 	&:before { 
@@ -10,7 +10,7 @@
 		position: relative;
 		top: 1px;
 		display: inline-block;
-		font-family: 'Glyphicons Halflings';
+		font-family: @icon-font-family;
 		font-style: normal;
 		font-weight: normal;
 		line-height: 1;
@@ -18,7 +18,7 @@
 	}
 }
 
-.make-glyphicon-after(@content) {
+.make-glyphicon-after(@content,@icon-font-family:'Glyphicons Halflings') {
 	position: relative;
 	display: inline-block;
 	&:after { 
@@ -26,7 +26,7 @@
 		position: relative;
 		top: 1px;
 		display: inline-block;
-		font-family: 'Glyphicons Halflings';
+		font-family: @icon-font-family;
 		font-style: normal;
 		font-weight: normal;
 		line-height: 1;
@@ -45,6 +45,13 @@
 .box-shadow(@shadow) {
 	-webkit-box-shadow: @shadow;
 	box-shadow: @shadow;
+}
+
+// Smooth hover fade
+.hover-fade(@duration: 0.2s) {
+	transition-property: background;
+	transition-duration: @duration;
+	transition-timing-function: linear;
 }
 
 // Horizontal gradient
