@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<theme>
+    <parent>base/default</parent>
+    <layout>
+        <updates>
+            <scaffold>
+                <file>scaffold.xml</file>
+            </scaffold>
+        </updates>
+    </layout>
+</theme>

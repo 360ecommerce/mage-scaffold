@@ -67,6 +67,7 @@
 /skin/frontend/scaffold/default/less/component-animations.less /skin/frontend/scaffold/default/less/component-animations.less
 /skin/frontend/scaffold/default/less/content.less /skin/frontend/scaffold/default/less/content.less
 /skin/frontend/scaffold/default/less/customer.less /skin/frontend/scaffold/default/less/customer.less
+/skin/frontend/scaffold/default/less/dropdowns.less /skin/frontend/scaffold/default/less/dropdowns.less
 /skin/frontend/scaffold/default/less/forms.less /skin/frontend/scaffold/default/less/forms.less
 /skin/frontend/scaffold/default/less/glyphicons.less /skin/frontend/scaffold/default/less/glyphicons.less
 /skin/frontend/scaffold/default/less/grid.less /skin/frontend/scaffold/default/less/grid.less

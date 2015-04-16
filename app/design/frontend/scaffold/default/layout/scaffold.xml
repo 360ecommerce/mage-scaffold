@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="root">
+			<block name="before_site_content" as="before_site_content" type="core/text_list" />
+			<block type="core/text_list" name="footer" as="footer" />
+		</reference>
+		<reference name="head">
+			<!-- Remove -->
+			<action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
+			<action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
+			<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name></action>
+			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name></action>
+			<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
+
+			<!-- CSS -->
+			<action method="addCss"><stylesheet>vendor/fancybox/source/jquery.fancybox.css</stylesheet></action>
+			<action method="addCss"><stylesheet>less/style.less</stylesheet></action>
+
+			<!-- JS -->
+			<action method="addItem"><type>skin_js</type><name>vendor/jquery/dist/jquery.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/jquery.noconflict.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/jquery-ui/jquery-ui.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/fancybox/source/jquery.fancybox.pack.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/bxslider-4/dist/jquery.bxslider.min.js</name></action>
+		</reference>
+
+		<reference name="header">
+	        <remove name="top.links" />
+	        <remove name="store_language" />
+	        <remove name="welcome" />
+
+	        <block name="header.top" as="header.top" type="core/template" template="page/html/header/top.phtml">
+	        	<block type="page/html_wrapper" name="top.left" as="top.left">
+	        		<action method="setElementClass"><value>col-left</value></action>
+	        		<block type="cms/block" name="top.left.block">
+						<action method="setBlockId"><block_id>top-left</block_id></action>
+					</block>
+				</block>
+				<block type="page/html_wrapper" name="top.right" as="top.right">
+	        		<action method="setElementClass"><value>col-right</value></action>
+					<block type="core/template" name="top.right.block" template="page/html/header/top/logged-out.phtml" />
+				</block>
+	        </block>
+
+	        <block name="quickAccess" as="quickAccess" type="core/text_list">
+	        	<block type="core/template" name="header.cart" template="page/html/header/cart.phtml" />
+	        </block>
+
+	        <block name="header.extra" as="header.extra" type="core/text_list">
+	        	<block type="page/html_wrapper" name="header.mobile" as="header.mobile">
+	        		<action method="setElementClass"><value>header-mobile</value></action>
+	        		<block type="core/template" name="mobile.navbar" template="page/html/header/mobile/navbar-toggle.phtml" />
+	        		<block type="core/template" name="mobile.search" template="page/html/header/mobile/search.phtml" />
+	        		<block type="core/template" name="mobile.phone" template="page/html/header/mobile/telephone.phtml" />
+	        		<block type="core/template" name="mobile.account" template="page/html/header/mobile/account.phtml" />
+	        		<block type="core/template" name="mobile.cart" template="page/html/header/mobile/cart.phtml" />
+	        	</block>
+	        </block>
+	    </reference>
+
+	    <reference name="left">
+            <remove name="left.permanent.callout" />
+            <remove name="left.newsletter" />
+            <remove name="catalog.compare.sidebar" />
+        </reference>
+
+        <reference name="right">
+            <remove name="quote_sidebar" />
+            <remove name="right.permanent.callout" />
+            <remove name="right.reports.product.viewed" />
+            <remove name="right.poll" />
+            <remove name="paypal.partner.right.logo" />
+        </reference>
+
+        <reference name="footer">
+			<block type="page/html_wrapper" name="footer.content" as="footer.content">
+				<action method="setElementClass"><value>site-footer</value></action>
+				<block name="footer.newsletter" as="footer.newsletter" type="core/template" template="page/html/footer/newsletter.phtml" />
+				<block name="footer.doormat" as="footer.doormat" type="core/template" template="page/html/footer/doormat.phtml" />
+				<block name="footer.bottom" as="footer.bottom" type="core/template" template="page/html/footer/bottom.phtml" />
+			</block>
+        </reference>
+	</default>
+
+	<!-- Homepage -->
+	<cms_index_index>
+		<update handle="page_to_one_column" />
+	</cms_index_index>
+
+	<!-- Logged in -->
+	<customer_logged_in>
+        <reference name="top.right.block">
+    		<action method="setTemplate"><template>page/html/header/top/logged-in.phtml</template></action>
+    	</reference>
+    </customer_logged_in>
+
+	<!-- Category -->
+	<catalog_category_default>
+        <update handle="page_to_two_columns_left" />
+
+        <reference name="content">
+            <remove name="product_list_toolbar" />
+        </reference>
+    </catalog_category_default>
+
+    <catalog_category_layered>
+        <reference name="content">
+            <remove name="product_list_toolbar" />
+        </reference>
+    </catalog_category_layered>
+
+	<!-- Product -->
+    <catalog_product_view>
+        <update handle="page_to_one_column" />
+    </catalog_product_view>
+
+	<!-- Cart -->
+    <checkout_cart_index>
+    	<update handle="checkout_header" />
+    	<remove name="checkout.cart.coupon" />
+    	<remove name="checkout.cart.shipping" />
+    	<remove name="checkout.cart.crosssell" />
+    </checkout_cart_index>
+
+	<!-- Checkout -->
+    <checkout_onepage_index>
+    	<update handle="checkout_header" />
+    </checkout_onepage_index>
+
+    <checkout_index_index>
+    	<update handle="checkout_header" />
+    </checkout_index_index>
+
+	<print>
+		<reference name="head">
+			<action method="addCss"><stylesheet>css/style.css</stylesheet></action>
+			<action method="addItem"><type>skin_js</type><name>js/functions.js</name></action>
+		</reference>
+	</print>
+
+	<!-- Custom handles (for update) -->
+	<checkout_header>
+		<reference name="header">
+    		<action method="setData"><name>header_class</name><value>header-checkout</value></action>
+
+    		<remove name="header.top" />
+    		<remove name="catalog.topnav" />
+    		<remove name="top.search" />
+    		<remove name="quickAccess" />
+    		<remove name="mobile.navbar" />
+    		<remove name="mobile.search" />
+    		<remove name="mobile.cart" />
+    	</reference>
+	</checkout_header>
+
+	<!-- Page template handles (for update) -->
+	<page_to_one_column>
+		<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+	</page_to_one_column>
+
+	<page_to_two_columns_left>
+		<reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+	</page_to_two_columns_left>
+
+	<page_to_two_columns_right>
+		<reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+	</page_to_two_columns_right>
+
+	<page_to_three_columns>
+		<reference name="root">
+            <action method="setTemplate"><template>page/3columns.phtml</template></action>
+        </reference>
+	</page_to_three_columns>
+</layout>
