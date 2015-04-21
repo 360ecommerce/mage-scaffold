@@ -1,0 +1,9 @@
+{
+    "name": "threesixty/mage-scaffold",
+    "description": "Magento scaffold",
+    "version": "0.1.0",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
