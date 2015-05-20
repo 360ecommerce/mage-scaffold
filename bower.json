@@ -10,6 +10,7 @@
         "html5shiv":        "latest",
         "carouFredSel":     "latest",
         "fancybox":         "latest",
-        "bxslider-4":       "latest"
+        "bxslider-4":       "latest",
+        "font-awesome":     "latest"
     }
 }
