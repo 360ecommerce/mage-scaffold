@@ -104,17 +104,7 @@
 	<!-- Category -->
 	<catalog_category_default>
         <update handle="page_to_two_columns_left" />
-
-        <reference name="content">
-            <remove name="product_list_toolbar" />
-        </reference>
     </catalog_category_default>
-
-    <catalog_category_layered>
-        <reference name="content">
-            <remove name="product_list_toolbar" />
-        </reference>
-    </catalog_category_layered>
 
 	<!-- Product -->
     <catalog_product_view>
