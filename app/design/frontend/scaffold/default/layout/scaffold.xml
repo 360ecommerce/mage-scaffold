@@ -14,21 +14,30 @@
 			<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name></action>
 			<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name></action>
 			<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
+            <action method="removeItem"><type>js</type><name>jquery/jquery.noconflict.js</name></action>
 
-			<!-- CSS -->
+            <!-- CSS -->
 			<action method="addCss"><stylesheet>vendor/fancybox/source/jquery.fancybox.css</stylesheet></action>
 
 			<!-- JS -->
 			<action method="addItem"><type>skin_js</type><name>vendor/jquery/dist/jquery.min.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>js/jquery.noconflict.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/jquery-ui/jquery-ui.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/fancybox/source/jquery.fancybox.pack.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bxslider-4/dist/jquery.bxslider.min.js</name></action>
+
+                <!-- Only IE < 9 -->
+                <action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name><params/><if>lt IE 9</if></action>
+                <action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name><params/><if>lt IE 9</if></action>
+
+            <block type="core/text" name="jquery.noconflict">
+                <action method="setText">
+                    <text><![CDATA[<script type="text/javascript">jQuery.noConflict();</script>]]></text>
+                </action>
+            </block>
+
         </reference>
 
 		<reference name="header">
