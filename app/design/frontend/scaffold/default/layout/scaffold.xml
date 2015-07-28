@@ -21,6 +21,7 @@
 
 			<!-- JS -->
 			<action method="addItem"><type>skin_js</type><name>vendor/jquery/dist/jquery.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/jquery.noconflict.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
@@ -31,12 +32,6 @@
                 <!-- Only IE < 9 -->
                 <action method="addItem"><type>skin_js</type><name>vendor/html5shiv/dist/html5shiv.js</name><params/><if>lt IE 9</if></action>
                 <action method="addItem"><type>skin_js</type><name>vendor/respond/dest/respond.min.js</name><params/><if>lt IE 9</if></action>
-
-            <block type="core/text" name="jquery.noconflict">
-                <action method="setText">
-                    <text><![CDATA[<script type="text/javascript">jQuery.noConflict();</script>]]></text>
-                </action>
-            </block>
 
         </reference>
 
