@@ -46,14 +46,7 @@
 /app/design/frontend/scaffold/default/template/tag/list.phtml /app/design/frontend/scaffold/default/template/tag/list.phtml
 /app/design/frontend/scaffold/project/layout/local.xml /app/design/frontend/scaffold/project/layout/local.xml
 /bower.json /bower.json
-/grunt/build.js /grunt/build.js
-/grunt/config/autoprefixer.js /grunt/config/autoprefixer.js
-/grunt/config/cssmin.js /grunt/config/cssmin.js
-/grunt/config/less.js /grunt/config/less.js
-/grunt/config/uglify.js /grunt/config/uglify.js
-/grunt/config/watch.js /grunt/config/watch.js
-/grunt/dev.js /grunt/dev.js
-/package.json /package.json
+/.bowerrc /.bowerrc
 /skin/frontend/scaffold/default/css/style.css /skin/frontend/scaffold/default/css/style.css
 /skin/frontend/scaffold/default/images/bg_x.png /skin/frontend/scaffold/default/images/bg_x.png
 /skin/frontend/scaffold/default/images/bkg_rating.gif /skin/frontend/scaffold/default/images/bkg_rating.gif
@@ -61,6 +54,8 @@
 /skin/frontend/scaffold/default/images/logo_email.gif /skin/frontend/scaffold/default/images/logo_email.gif
 /skin/frontend/scaffold/default/images/logo_print.gif /skin/frontend/scaffold/default/images/logo_print.gif
 /skin/frontend/scaffold/default/images/opc-ajax-loader.gif /skin/frontend/scaffold/default/images/opc-ajax-loader.gif
+/skin/frontend/scaffold/default/js/rwd_app.js /skin/frontend/scaffold/default/js/rwd_app.js
+/skin/frontend/scaffold/default/js/imagesloaded.js /skin/frontend/scaffold/default/js/imagesloaded.js
 /skin/frontend/scaffold/default/js/configurableswatches/product-media.js /skin/frontend/scaffold/default/js/configurableswatches/product-media.js
 /skin/frontend/scaffold/default/js/configurableswatches/swatches-list.js /skin/frontend/scaffold/default/js/configurableswatches/swatches-list.js
 /skin/frontend/scaffold/default/js/configurableswatches/swatches-product.js /skin/frontend/scaffold/default/js/configurableswatches/swatches-product.js
