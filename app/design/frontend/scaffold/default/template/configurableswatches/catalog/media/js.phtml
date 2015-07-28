@@ -24,16 +24,13 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php
-    /* @var $this Mage_ConfigurableSwatches_Block_Catalog_Media_Js_Abstract */
-?>
 
 <script type="text/javascript">
-    $j(document).on('product-media-loaded', function() {
+    jQuery(document).on('product-media-loaded', function() {
         ConfigurableMediaImages.init('<?php echo $this->getImageType(); ?>');
         <?php foreach ($this->getProductImageFallbacks() as $imageFallback): ?>
-        ConfigurableMediaImages.setImageFallback(<?php echo $imageFallback['product']->getId(); ?>, $j.parseJSON('<?php echo $imageFallback['image_fallback']; ?>'));
+            ConfigurableMediaImages.setImageFallback(<?php echo $imageFallback['product']->getId(); ?>, jQuery.parseJSON('<?php echo $imageFallback['image_fallback']; ?>'));
         <?php endforeach; ?>
-        $j(document).trigger('configurable-media-images-init', ConfigurableMediaImages);
+        jQuery(document).trigger('configurable-media-images-init', ConfigurableMediaImages);
     });
 </script>
