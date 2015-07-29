@@ -1212,22 +1212,13 @@ var ProductMediaManager = {
             //add spinner
             imageGallery.addClass('loading');
 
-            //move target image to correct place, in case it's necessary
-            imageGallery.append(targetImage);
-
             //wait until image is loaded
-            imagesLoaded(targetImage, function() {
+            imagesLoaded(targetImage[0], function() {
                 //remove spinner
+                $j('.product-image .js-fancy-start').attr('href', targetImage[0].currentSrc);
+                $j('.product-image .js-base').attr('src', targetImage[0].currentSrc);
+
                 imageGallery.removeClass('loading');
-
-                //hide old image
-                imageGallery.find('.gallery-image').removeClass('visible');
-
-                //reveal new image
-                targetImage.addClass('visible');
-
-                //wire zoom on new image
-                ProductMediaManager.createZoom(targetImage);
             });
 
         }
