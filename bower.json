@@ -5,7 +5,7 @@
     "dependencies": {
         "respond":          "latest",
         "enquire":          "latest",
-        "modernizr":        "latest",
+        "modernizr":        "2.*",
         "bootstrap":        ">=3.3.0",
         "html5shiv":        "latest",
         "carouFredSel":     "latest",
