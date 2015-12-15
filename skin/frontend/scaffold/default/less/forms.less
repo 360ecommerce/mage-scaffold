@@ -47,17 +47,23 @@ p.control input.radio {
     }
     .field {
         float: left;
-        width: 50%;
-        padding-right: (@grid-gutter-width / 2);
-        padding-left: (@grid-gutter-width / 2);
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
 
-        &:first-child,
-        &:first-of-type {
-            padding-left: 0;
-        }
+        @media( min-width: @screen-sm ){
+            width: 50%;
+            padding-right: (@grid-gutter-width / 2);
+            padding-left: (@grid-gutter-width / 2);
 
-        &:last-child {
-            padding-right: 0;
+            &:first-child,
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
         }
     }
     textarea,
@@ -123,120 +129,122 @@ p.control input.radio {
     // item are represented by a number and a dash.
     // This ensures we hit every concevable combination
 
-    // 1-1-0-1-0
-    .customer-name-prefix {
-        .name-prefix {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 42%;
-        }
-    }
-
-    // 1-1-1-1-0
-    .customer-name-prefix-middlename {
-        .name-prefix,
-        .name-middlename, {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 34%;
-        }
-    }
-
-    // 1-1-0-1-1
-    .customer-name-prefix-suffix {
-        .name-prefix,
-        .name-suffix {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 34%;
-        }
-    }
-
-    // 1-1-1-1-1
-    .customer-name-prefix-middlename-suffix {
-        .name-prefix,
-        .name-middlename,
-        .name-suffix {
-            width: 12%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 32%;
-        }
-    }
-
-    // 0-1-1-1-0
-    .customer-name-middlename {
-        .name-middlename {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 42%;
-        }
-    }
-
-    // 0-1-1-1-1
-    .customer-name-middlename-suffix {
-        .name-middlename,
-        .name-suffix, {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 34%;
-        }
-    }
-
-    // 0-1-0-1-1
-    .customer-name-suffix {
-        .name-suffix {
-            width: 16%;
-        }
-        .name-firstname,
-        .name-lastname {
-            width: 42%;
-        }
-    }
-
-    // Date of birth is easy,
-    // it's just 30% 30% 40%
-    .customer-dob {
-        .dob-day,
-        .dob-month,
-        .dob-year {
-            float: left;
-            padding-right: (@grid-gutter-width / 2);
-            padding-left: (@grid-gutter-width / 2);
-
-            &:first-child {
-                padding-left: 0;
+    @media( min-width: @screen-sm ){
+        // 1-1-0-1-0
+        .customer-name-prefix {
+            .name-prefix {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 42%;
             }
         }
 
-        // Unfortunately, the last child is not the
-        // last element. However we can use a clever
-        // selector to find this out.
-        .dob-day + .dob-month + .dob-year,
-        .dob-month + .dob-day + .dob-year,
-        .dob-year + .dob-day + .dob-month,
-        .dob-year + .dob-month + .dob-day {
-            padding-right: 0;
+        // 1-1-1-1-0
+        .customer-name-prefix-middlename {
+            .name-prefix,
+            .name-middlename, {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 34%;
+            }
         }
 
-        .dob-day,
-        .dob-month {
-            width: 30%;
+        // 1-1-0-1-1
+        .customer-name-prefix-suffix {
+            .name-prefix,
+            .name-suffix {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 34%;
+            }
         }
 
-        .dob-year {
-            width: 40%;
+        // 1-1-1-1-1
+        .customer-name-prefix-middlename-suffix {
+            .name-prefix,
+            .name-middlename,
+            .name-suffix {
+                width: 12%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 32%;
+            }
+        }
+
+        // 0-1-1-1-0
+        .customer-name-middlename {
+            .name-middlename {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 42%;
+            }
+        }
+
+        // 0-1-1-1-1
+        .customer-name-middlename-suffix {
+            .name-middlename,
+            .name-suffix, {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 34%;
+            }
+        }
+
+        // 0-1-0-1-1
+        .customer-name-suffix {
+            .name-suffix {
+                width: 16%;
+            }
+            .name-firstname,
+            .name-lastname {
+                width: 42%;
+            }
+        }
+
+        // Date of birth is easy,
+        // it's just 30% 30% 40%
+        .customer-dob {
+            .dob-day,
+            .dob-month,
+            .dob-year {
+                float: left;
+                padding-right: (@grid-gutter-width / 2);
+                padding-left: (@grid-gutter-width / 2);
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            // Unfortunately, the last child is not the
+            // last element. However we can use a clever
+            // selector to find this out.
+            .dob-day + .dob-month + .dob-year,
+            .dob-month + .dob-day + .dob-year,
+            .dob-year + .dob-day + .dob-month,
+            .dob-year + .dob-month + .dob-day {
+                padding-right: 0;
+            }
+
+            .dob-day,
+            .dob-month {
+                width: 30%;
+            }
+
+            .dob-year {
+                width: 40%;
+            }
         }
     }
 }
