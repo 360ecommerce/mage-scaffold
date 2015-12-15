@@ -74,13 +74,26 @@
 }
 
 .please-wait {
-    float: right;
-    margin-right: 10px;
+    display: block;
+    padding-top: 20px;
     font-size: @font-size-small;
     color: @text-muted;
 
     img {
-        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+
+        @media( min-width: @screen-sm ){
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+
+    @media( min-width: @screen-sm ){
+        position: absolute;
+        right: 0;
+        display: inline;
+        padding-top: 0px;
         margin-right: 10px;
     }
 }
