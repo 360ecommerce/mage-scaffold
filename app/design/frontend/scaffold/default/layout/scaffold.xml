@@ -22,10 +22,10 @@
 			<!-- JS -->
 			<action method="addItem"><type>skin_js</type><name>vendor/jquery/dist/jquery.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>js/jquery.noconflict.js</name></action>
-			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/modernizr/modernizr.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/enquire/dist/enquire.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/jquery-ui/jquery-ui.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>vendor/bootstrap/dist/js/bootstrap.min.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/fancybox/source/jquery.fancybox.pack.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>vendor/bxslider-4/dist/jquery.bxslider.min.js</name></action>
 
